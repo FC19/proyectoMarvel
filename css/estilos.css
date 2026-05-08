@@ -1,0 +1,65 @@
+:root {
+    --rojo-marvel: #e23636;
+    --negro-profundo: #000000;
+    --gris-oscuro: #202020;
+    --blanco: #ffffff;
+    --dorado-critica: #ffcc00;
+    --espaciado-8: 0.5rem;  
+    --espaciado-16: 1rem;   
+    --espaciado-24: 1.5rem; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--negro-profundo);
+    color: var(--blanco);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px; 
+}
+
+h2 {
+    text-align: center;
+    color: var(--rojo-marvel);
+    font-size: 2rem; /* Clase 2: Uso de rem */
+    margin: 1.5rem 0;
+}
+
+/* Estilos de la Card (Article) */
+.pelicula-card {
+    background-color: var(--gris-oscuro);
+    border-radius: 8px; /* Clase 2: Propiedad pedida */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+/* Estilos de Imagen con efectos de Clase 2 */
+.pelicula-card img {
+    width: 100%;
+    max-width: 220px;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Clase 2: Propiedad pedida */
+    filter: sepia(10%); /* Aplicamos un filtro sutil como el ejemplo del profe */
+    transition: filter 0.3s ease;
+}
+
+.pelicula-card img:hover {
+    filter: sepia(0%); /* El filtro se quita al pasar el mouse */
+}
+
+.pelicula-card h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.pelicula-card p {
+    font-size: 0.9rem;
+    margin: 0.2rem 0;
+}
+
+.pelicula-card span {
+    color: var(--dorado-critica); /* Corregido */
+    font-weight: bold;
+}
