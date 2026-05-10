@@ -163,3 +163,46 @@ h2 {
         padding: 0 50px;
     }
 }
+
+.btn-like {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: var(--blanco);
+    border: 2px solid var(--rojo-marvel);
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+    transition: all 0.3s ease;
+}
+
+.btn-like:hover {
+    background-color: var(--rojo-marvel);
+    transform: scale(1.05); 
+}
+
+#bienvenida {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                      url('../img/fondo_marvel.jpg'); 
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 2px solid var(--rojo-marvel);
+}
+
+#bienvenida h2 {
+    color: var(--blanco);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#mensaje-saludo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--rojo-marvel);
+    text-transform: uppercase;
+}

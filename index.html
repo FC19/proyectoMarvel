@@ -22,6 +22,7 @@
     <main>
         <section id="bienvenida">
             <h2>Bienvenido al Universo Marvel</h2>
+            <p id="mensaje-saludo">Cargando sistema...</p>
             <p>Explora la recopilación más completa de las películas que cambiaron la historia del cine de superhéroes.</p>
         </section>
 
@@ -40,6 +41,7 @@
                 <h3>Avengers: Endgame</h3>
                 <p>Recaudación mundial: <span>$2.798 B</span></p>
                 <p>Aceptación de la crítica: <span>94%</span></p>
+                <button class="btn-like" onclick="marcarFavorito(this)">Me gusta</button>
             </div>
         </article>
 
@@ -49,6 +51,7 @@
                 <h3>Avengers: Infinity War</h3>
                 <p>Recaudación mundial: <span>$2.048 B</span></p>
                 <p>Aceptación de la crítica: <span>85%</span></p>
+                <button class="btn-like" onclick="marcarFavorito"(this)>Me gusta</button>           
             </div>
         </article>
 
@@ -58,6 +61,7 @@
                 <h3>Spider-Man: No Way Home</h3>
                 <p>Recaudación mundial: <span>$1.922 B</span></p>
                 <p>Aceptación de la crítica: <span>93%</span></p>
+                <button class="btn-like" onclick="marcarFavorito(this)">Me gusta</button>
             </div>
         </article>
 
@@ -67,8 +71,31 @@
                 <h3>The Avengers</h3>
                 <p>Recaudación mundial: <span>$1.519 B</span></p>
                 <p>Aceptación de la crítica: <span>91%</span></p>
+                <button class="btn-like" onclick="marcarFavorito(this)">Me gusta</button>
             </div>
         </article>
+
+        <article class="pelicula-card">
+    <img src="img/Age_of_Ultron.jpg" alt="Póster de Avengers Age of Ultron">
+    <div class="info">
+        <h3>Avengers: Age of Ultron</h3>
+        <p>Recaudación mundial: <span>$1.405 B</span></p>
+        <p>Aceptación de la crítica: <span>76%</span></p>
+        <button class="btn-like" onclick="marcarFavorito(this)">Me gusta</button>
+    </div>
+</article>
+
+<article class="pelicula-card">
+    <img src="img/Black_Panther.jpg" alt="Póster de Black Panther">
+    <div class="info">
+        <h3>Black Panther</h3>
+        <p>Recaudación mundial: <span>$1.347 B</span></p>
+        <p>Aceptación de la crítica: <span>96%</span></p>
+        <button class="btn-like" onclick="marcarFavorito(this)">Me gusta</button>
+    </div>
+</article>
+
+        
     </div>
 </section>
 
@@ -83,5 +110,6 @@
     </div>
 </footer>
 
+<script src="js/script.js"></script>
 </body>
 </html>
