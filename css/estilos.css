@@ -14,6 +14,8 @@
     --espaciado-8: 0.5rem;  
     --espaciado-16: 1rem;   
     --espaciado-24: 1.5rem; 
+    --font-titulo-grande: clamp(1.8rem, 5vw, 3rem);
+    --font-titulo-seccion: clamp(1.4rem, 4vw, 2.2rem);
 }
 
 body {
@@ -51,6 +53,9 @@ header {
 }
 
 nav {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
     margin-top: var(--espaciado-16);
 }
 
@@ -69,16 +74,14 @@ nav {
 }
 
 main {
-    padding: var(--espaciado-24);
+    padding: 10px;
 }
 
 .contenedor-grilla {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
-    gap: 30px; 
-    padding: var(--espaciado-24);
-    max-width: 1200px; 
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 1rem;
 }
 
 .pelicula-card {
@@ -120,4 +123,43 @@ footer {
 section {
     margin-bottom: 3rem; 
     padding: 0 var(--espaciado-16); 
+}
+
+header h1, .logo-text, .logo-subtext {
+    font-size: var(--font-titulo-grande);
+}
+
+h2 {
+    font-size: var(--font-titulo-seccion);
+    text-align: center;
+    color: var(--rojo-marvel);
+    margin: 2rem 0;
+}
+
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row; 
+        justify-content: center;
+    }
+    
+    header {
+        padding: 40px;
+    }
+}
+
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 50px;
+    }
 }
