@@ -29,3 +29,4 @@ function marcarFavorito(elemento) {
     elemento.style.backgroundColor = "#e23636";
     console.log("Película marcada por: " + usuario);
 }
+
